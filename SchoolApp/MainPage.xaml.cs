@@ -14,4 +14,8 @@ public partial class MainPage : ContentPage
         _count++;
         StatusLabel.Text = $"Кнопка нажата {_count} раз(а).";
     }
+    private async void OnOpenStudentsClicked(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync(nameof(StudentsPage));
+    }
 }

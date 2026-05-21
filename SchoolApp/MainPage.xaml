@@ -21,6 +21,9 @@
         <Button Text="Проверить"
                 Clicked="OnTapClicked"
                 HorizontalOptions="Center" />
+        <Button Text="Открыть список студентов"
+        Clicked="OnOpenStudentsClicked"
+        HorizontalOptions="Center" />
     </VerticalStackLayout>
 
 </ContentPage>
