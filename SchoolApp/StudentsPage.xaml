@@ -8,7 +8,7 @@
 
         <Label Text="Students" FontSize="24" />
 
-     
+        <!-- форма: вводишь имя, жмёшь Add -->
         <HorizontalStackLayout Spacing="10">
             <Entry  Text="{Binding NewName}"
                     Placeholder="New student name"
@@ -17,7 +17,7 @@
                     Clicked="OnAddClicked" />
         </HorizontalStackLayout>
 
-   
+        <!-- список -->
         <CollectionView x:Name="StudentsList"
                         ItemsSource="{Binding Students}"
                         SelectionMode="Single"
